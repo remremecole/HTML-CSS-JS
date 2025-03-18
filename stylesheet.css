@@ -1,31 +1,37 @@
 h1 {
     color: rebeccapurple;
+    font-family: "Big Shoulders Inline", sans-serif;
 }
 
-.firstbox {
-    /* Dimensions du contenu */
-    width: 300px;
-    height: 200px;
+body {
+    margin: 0% 10% 0% 10%;
+}
 
-    /* Espace interne */
+.box {
     padding: 20px;
 
     /* Bordure */
-    border: 2px solid rebeccapurple;
+    border: 1px solid rebeccapurple;
 
     /* Espace externe */
-    margin: 30px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+    margin: 5px;
 }
 
 .nav-items {
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;    
+}
+
+.fix {
+    position: fixed;
+    margin: 0%;
 }
 
 .nav-items li {
@@ -44,3 +50,13 @@ a {
 .nav4 {
     color: rgb(208, 0, 255);
 }
+
+.cvpng img {
+    max-width:
+    height: 80% auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+

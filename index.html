@@ -1,58 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="StyleSheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premier cours HTML</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-
 <body>
-    <header class="fix">
-        <nav class="navbar">
+    <header class="head">
+        <div class="navbar">
             <ul class="nav-items">
-                <li class="nav1" href="Home">Home</li>
-                <li class="nav2" href="">A Propos</li>
-                <li class="nav3" href="">CV</li>
-                <li class="nav4" href="">Contacts</li>
+                <li class="nav1 nav0"><a href="#Home">Home</a></li>
+                <li class="nav2 nav0"><a href="#propos">A Propos</a></li>
+                <li class="nav3 nav0"><a href="#cv">CV</a></li>
+                <li class="nav4 nav0"><a href="#contact">Contacts</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
-    </div>
-
-    <h1 class="home"><u>Home</u></h1>
-        <div class="box">
-            <p>
-                Bienvenue ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus similique dolorem ab repudiandae, fuga expedita neque pariatur labore aliquid inventore doloremque quaerat exercitationem numquam dolore saepe non unde dicta! 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus similique dolorem ab repudiandae, fuga expedita neque pariatur labore aliquid inventore doloremque quaerat exercitationem numquam dolore saepe non unde dicta!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus similique dolorem ab repudiandae, fuga expedita neque pariatur labore aliquid inventore doloremque quaerat exercitationem numquam dolore saepe non unde dicta!
-            </p>
-       </div>
-
-    <h1><u>A Propos</u></h1>
-
+    <h1 id="Home"><u>Home</u></h1>
     <div class="box">
         <p>
-            Je suis ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus similique dolorem ab repudiandae, fuga expedita neque pariatur labore aliquid inventore doloremque quaerat exercitationem numquam dolore saepe non unde dicta! 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus similique dolorem ab repudiandae, fuga expedita neque pariatur labore aliquid inventore doloremque quaerat exercitationem numquam dolore saepe non unde dicta!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus similique dolorem ab repudiandae, fuga expedita neque pariatur labore aliquid inventore doloremque quaerat exercitationem numquam dolore saepe non unde dicta!
+            Bienvenue ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus similique dolorem ab
+            repudiandae, fuga expedita neque pariatur labore aliquid inventore doloremque quaerat exercitationem numquam
+            dolore saepe non unde dicta!
         </p>
-   </div>
+    </div>
 
+    <section id="propos">
+        <h1><u>A Propos</u></h1>
+        <div class="box">
+            <p>
+                Je suis ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus similique dolorem ab
+                repudiandae, fuga expedita neque pariatur labore aliquid inventore doloremque quaerat exercitationem
+                numquam dolore saepe non unde dicta!
+            </p>
+        </div>
+    </section>
 
+    <h1 id="cv"><u>CV</u></h1>
+    <div class="cvpng">
+        <img src="C:\Users\Rémi\Documents\Mes Cours\Semaines full informatique\Mounir\HTML CSS JS\images\CV.jpg"
+            alt="CV Image">
+    </div>
 
+    <h1 id="contact"><u>Contact</u></h1>
 
+    <!-- ==================================================================== -->
+<div class="rubrique_contact">
+    <div class="AdTelMail">
 
-    <h1><u>CV</u></h1>
+        <div>
 
-        <div class="cvpng">         
-            <img src="C:\Users\Rémi\Documents\Mes Cours\Semaines full informatique\Mounir\HTML CSS JS\BTS_SIO_SEPR.jpg" alt="">
-       </div>
+            <div>
+                <div>
+                    <i></i>
+                    <div>
+                        <h3>Adresse</h3>
+                        <p>1 Rue de la République, Lyon 69000</p>
+                    </div>
+                </div>
 
+                <div>
+                    <h3>Téléphone</h3>
+                    <p>+1 5589 55488 55</p>
+                </div>
+            </div>
+
+            <div>
+                <i></i>
+                <div>
+                    <h3>Courriel</h3>
+                    <p>remi.rascle@ecole-isitech.fr</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="mecontacter">
+        <div>
+            <form>
+                <div>
+
+                    <div>
+                        <h3>Nom</h3>
+                        <input>
+                    </div>
+
+                    <div>
+                        <h3>Adresse email</h3>
+                        <input>
+                    </div>
+
+                    <div>
+                        <h3>Objet</h3>
+                        <input>
+                    </div>
+
+                    <div>
+                        <h3>Message</h3>
+                        <textarea></textarea>
+                    </div>
+
+                    <div>
+                        <button>Send Message</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
+
 </html>

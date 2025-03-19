@@ -1,62 +1,92 @@
 h1 {
     color: rebeccapurple;
     font-family: "Big Shoulders Inline", sans-serif;
+    margin-top: 80px;
+}
+
+h3 {
+    color: rebeccapurple;
+    font-family: "Big Shoulders Inline", sans-serif;
 }
 
 body {
-    margin: 0% 10% 0% 10%;
+    margin: 0% 10% 10% 10%;
+    font-family: Arial, sans-serif;
 }
 
 .box {
     padding: 20px;
-
-    /* Bordure */
     border: 1px solid rebeccapurple;
-
-    /* Espace externe */
     margin: 5px;
 }
 
 .nav-items {
     display: flex;
-    gap: 20px;
+    justify-content: center;
     font-size: 24px;
-    font-weight: 1000;
+    gap: 25px;
+    font-weight: 700;
+    margin: 0;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;    
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 600;
+    padding: 10px 0;
 }
 
-.fix {
+.head {
+    background-color: black;
+    width: 100%;
     position: fixed;
-    margin: 0%;
+    top: 0;
+    left: 0; 
+    z-index: 600;
 }
 
 .nav-items li {
     list-style: none;
 }
 
+.nav-items a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .nav1 {
     color: rgb(255, 225, 0);
 }
+
 .nav2 {
     color: rgb(43, 255, 0);
 }
+
 .nav3 {
     color: rgb(0, 255, 217);
 }
+
 .nav4 {
     color: rgb(208, 0, 255);
 }
 
 .cvpng img {
-    max-width:
-    height: 80% auto;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    height: auto;
 }
 
+.rubrique_contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-
+.AdTelMail, .mecontacter {
+    width: 40%;
+}

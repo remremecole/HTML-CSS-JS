@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="StyleSheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap"
         rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
 </head>
 
 <body>
     <header class="head">
         <div class="navbar">
+
             <ul class="nav-items">
                 <li class="nav1 nav0"><a href="#Home">Home</a></li>
                 <li class="nav2 nav0"><a href="#propos">A Propos</a></li>
                 <li class="nav3 nav0"><a href="#cv">CV</a></li>
                 <li class="nav4 nav0"><a href="#contact">Contacts</a></li>
             </ul>
+            <button id="GoToDarkMode">🌙 Mode Sombre</button>
         </div>
     </header>
 
@@ -46,77 +51,86 @@
 
     <h1 id="cv"><u>CV</u></h1>
     <div class="cvpng">
-        <img src="C:\Users\Rémi\Documents\Mes Cours\Semaines full informatique\Mounir\HTML CSS JS\images\CV.jpg"
-            alt="CV Image">
+        <img src="images\CV.jpg" alt="CV Image">
     </div>
 
     <h1 id="contact"><u>Contact</u></h1>
 
     <!-- ==================================================================== -->
-<div class="rubrique_contact">
-    <div class="AdTelMail">
 
-        <div>
+    <div class="rubrique_contact">
+        <div class="AdTelMail">
 
             <div>
+
+                <div>
+                    <div>
+                        <i></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p class="moi">1 Rue de la République, Lyon 69000</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Téléphone</h3>
+                        <p class="moi">+1 5589 55488 55</p>
+                    </div>
+                </div>
+
                 <div>
                     <i></i>
                     <div>
-                        <h3>Adresse</h3>
-                        <p>1 Rue de la République, Lyon 69000</p>
+                        <h3>Courriel</h3>
+                        <p class="moi">remi.rascle@ecole-isitech.fr</p>
                     </div>
                 </div>
 
-                <div>
-                    <h3>Téléphone</h3>
-                    <p>+1 5589 55488 55</p>
-                </div>
             </div>
-
+        </div>
+        <div class="mecontacter">
             <div>
-                <i></i>
-                <div>
-                    <h3>Courriel</h3>
-                    <p>remi.rascle@ecole-isitech.fr</p>
-                </div>
+                <form>
+                    <div>
+
+                        <div>
+                            <h3>Nom</h3>
+                            <input>
+                        </div>
+
+                        <div>
+                            <h3>Adresse email</h3>
+                            <input>
+                        </div>
+
+                        <div>
+                            <h3>Objet</h3>
+                            <input>
+                        </div>
+
+                        <div>
+                            <h3>Message</h3>
+                            <textarea></textarea>
+                        </div>
+
+                        <div>
+                            <button>Send Message</button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
-
         </div>
     </div>
-    <div class="mecontacter">
+
+    <footer>
+
         <div>
-            <form>
-                <div>
-
-                    <div>
-                        <h3>Nom</h3>
-                        <input>
-                    </div>
-
-                    <div>
-                        <h3>Adresse email</h3>
-                        <input>
-                    </div>
-
-                    <div>
-                        <h3>Objet</h3>
-                        <input>
-                    </div>
-
-                    <div>
-                        <h3>Message</h3>
-                        <textarea></textarea>
-                    </div>
-
-                    <div>
-                        <button>Send Message</button>
-                    </div>
-
-                </div>
-            </form>
+            <p id="clock">🕒 Heure actuelle : --:--:--</p>
         </div>
-    </div>
-</div>
+
+    </footer>
+
 </body>
 
 </html>

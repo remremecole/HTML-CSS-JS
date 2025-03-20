@@ -23,7 +23,7 @@ body {
 .nav-items {
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: 135%;
     gap: 25px;
     font-weight: 700;
     margin: 0;
@@ -44,7 +44,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0; 
+    left: 0;
     z-index: 600;
 }
 
@@ -81,12 +81,46 @@ body {
 }
 
 .rubrique_contact {
+
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.AdTelMail, .mecontacter {
+.AdTelMail,
+.mecontacter {
+    border: 2px solid rebeccapurple;
+    border-radius: 5%;
     width: 40%;
+    padding: 2%;
+}
+
+.moi {
+    font-size: 65%;
+}
+
+textarea,
+input {
+    width: 96%;
+}
+
+
+
+/* =============================DARK MOD======================================= */
+
+
+
+#GoToDarkMode {
+    position: fixed;
+    top: 7%;
+    right: 20px;
+    background: white;
+    color: black;
+    border: 3px solid rebeccapurple;
+    padding: 8px 12px;
+    cursor: url('images/favicon.ico'), auto;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
